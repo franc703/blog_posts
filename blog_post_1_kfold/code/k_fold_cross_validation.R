@@ -19,3 +19,6 @@ for (j in 1:k) {
   pred <- predict(lm.fit, Hitters[folds == j, ])
   cv.kfold[j] <- mean((Hitters$Salary[folds == j] - pred)^2)
 }
+
+# Average the errors to have the k-fold CV MSE
+mean.kfold.error <- apply(cv.kfold, 2, mean)
