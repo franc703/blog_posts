@@ -6,7 +6,7 @@ Hitters <- na.omit(Hitters)
 
 # Set up the parameters we need
 k <- 10 #   Set up the number of folds you want
-n <- nrow(Hitters)
+n <- nrow(Hitters) #    Set up the number of times we will sample (number of rows)
 
 # Create the folds: we sample from (1,2,3,..., k) as many times as we have rows
 
