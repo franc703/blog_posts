@@ -24,3 +24,6 @@ for (j in 1:k) {
 
 # Average the errors to have the k-fold CV MSE
 mean.kfold.error <- apply(cv.kfold, 2, mean) #    Average the k MSE
+
+# Show the average k-fold error
+mean.kfold.error
