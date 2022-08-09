@@ -5,7 +5,7 @@ library(ISLR2)
 Hitters <- na.omit(Hitters)
 
 # Set up the parameters we need
-k <- 10
+k <- 10 #   Set up the number of folds you want
 n <- nrow(Hitters)
 
 # Create the folds: we sample from (1,2,3,..., k) as many times as we have rows
